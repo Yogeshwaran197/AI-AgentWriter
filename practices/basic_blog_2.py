@@ -229,7 +229,8 @@ Blog = graph.compile(checkpointer=checkpointer)
 
 config = {"configurable" : {"thread_id" : "jana"}}
 
-response = Blog.invoke({"topic": "Write a blog on Student who passinate about AI Engineer", "sections": []}, config=config)
+if __name__ == "__main__":
+    response = Blog.invoke({"topic": "Write a blog on Student who passinate about AI Engineer", "sections": []}, config=config)
 
 print("="*60)
 print("BLOG")
